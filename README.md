@@ -1,3 +1,3 @@
 ## Dashboard PROJECT
 GO TO 
-[//https//.](https://nendoc.vercel.app)
+[THIS PROJECT](https://nendoc.vercel.app)
