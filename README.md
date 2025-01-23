@@ -1,3 +1,3 @@
 ## Dashboard PROJECT
 GO TO 
-[THIS PROJECT](https://nendoc.vercel.app)
+[SEE ME LIVE](https://nendoc.vercel.app)
