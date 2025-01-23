@@ -28,7 +28,7 @@ const customers = [
   },
   {
     id: '76d65c26-f784-44a2-ac19-586678f7c2f2',
-    name: 'Michael Novotny',
+    name: 'Michael',
     email: 'michael@novotny.com',
     image_url: '/customers/michael-novotny.png',
   },
