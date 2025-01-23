@@ -1,3 +1,3 @@
 ## Dashboard PROJECT
 GO TO 
-www.nendoc.vercel.app
+nendoc.vercel.app
