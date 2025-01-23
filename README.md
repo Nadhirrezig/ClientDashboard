@@ -1,3 +1,3 @@
 ## Dashboard PROJECT
 GO TO 
-<a href="nendoc.vercel.app">go to<a>
+www.nendoc.vercel.app
