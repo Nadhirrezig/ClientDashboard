@@ -6,6 +6,7 @@ import {fetchCardData } from '@/app/lib/data';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton} from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 export default async function Page() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   const fetchedCardData = await fetchCardData();
   const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers } = fetchedCardData
   return (
