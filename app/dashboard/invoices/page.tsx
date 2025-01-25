@@ -7,17 +7,17 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 
-export default async function Page(
-  props: {
-    searchParams?: {
-      query?: string;
-      page?: string;
-    };
-  }
-) {
-  const searchParams = props.searchParams || {};
-  const query = searchParams.query || '';
-  const currentPage = Number(searchParams.page) || 1;
+interface PageProps {
+  searchParams?: Promise<{
+    query?: string;
+    page?: string;
+  }>;
+}
+
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
+  const query = searchParams?.query || '';
+  const currentPage = Number(searchParams?.page) || 1;
   const totalPages = await fetchInvoicesPages(query);
 
   return (
