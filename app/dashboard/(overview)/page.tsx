@@ -1,3 +1,7 @@
+export const dynamic = 'force-dynamic';
+////////////////////// please do not write this code
+// IN PRODUCTION it forces the static to be dynamic im just using it for some testing DO NOT USE IT IN PRODUCTION
+// LOVE AND THANKS
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
