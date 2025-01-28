@@ -1,5 +1,9 @@
 const shimmer =
   'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+import {
+  CurrencyDollarIcon,
+  UserCircleIcon,
+} from '@heroicons/react/24/outline';
 
 export function CardSkeleton() {
   return (
@@ -104,30 +108,24 @@ export default function DashboardSkeleton() {
 export function TableRowSkeleton() {
   return (
     <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
-      {/* Customer Name and Image */}
       <td className="relative overflow-hidden whitespace-nowrap py-3 pl-6 pr-3">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-full bg-gray-100"></div>
           <div className="h-6 w-24 rounded bg-gray-100"></div>
         </div>
       </td>
-      {/* Email */}
       <td className="whitespace-nowrap px-3 py-3">
         <div className="h-6 w-32 rounded bg-gray-100"></div>
       </td>
-      {/* Amount */}
       <td className="whitespace-nowrap px-3 py-3">
         <div className="h-6 w-16 rounded bg-gray-100"></div>
       </td>
-      {/* Date */}
       <td className="whitespace-nowrap px-3 py-3">
         <div className="h-6 w-16 rounded bg-gray-100"></div>
       </td>
-      {/* Status */}
       <td className="whitespace-nowrap px-3 py-3">
         <div className="h-6 w-16 rounded bg-gray-100"></div>
       </td>
-      {/* Actions */}
       <td className="whitespace-nowrap py-3 pl-6 pr-3">
         <div className="flex justify-end gap-3">
           <div className="h-[38px] w-[38px] rounded bg-gray-100"></div>
@@ -211,6 +209,48 @@ export function InvoicesTableSkeleton() {
             </tbody>
           </table>
         </div>
+      </div>
+    </div>
+  );
+}
+
+export function SkeletonEditInvoiceForm() {
+  return (
+    <div className="animate-pulse rounded-md bg-gray-50 p-4 md:p-6">
+      <div className="mb-6">
+        <div className="mb-2 h-4 w-24 rounded bg-gray-300" />
+        <div className="relative">
+          <div className="peer block w-full rounded-md border bg-gray-200 py-3 pl-10 text-sm placeholder:text-gray-500" />
+          <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-400" />
+        </div>
+      </div>
+      <div className="mb-6">
+        <div className="mb-2 h-4 w-32 rounded bg-gray-300" />
+        <div className="relative mt-2 rounded-md">
+          <div className="relative">
+            <div className="peer block w-full rounded-md border bg-gray-200 py-3 pl-10 text-sm placeholder:text-gray-500" />
+            <CurrencyDollarIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-400" />
+          </div>
+        </div>
+      </div>
+      <fieldset className="mb-6">
+        <div className="mb-2 h-4 w-40 rounded bg-gray-300" />
+        <div className="rounded-md border border-gray-200 bg-gray-100 px-[14px] py-4">
+          <div className="flex gap-6">
+            <div className="flex items-center">
+              <div className="h-4 w-4 rounded-full bg-gray-300" />
+              <div className="ml-2 h-6 w-20 rounded bg-gray-300" />
+            </div>
+            <div className="flex items-center">
+              <div className="h-4 w-4 rounded-full bg-gray-300" />
+              <div className="ml-2 h-6 w-20 rounded bg-gray-300" />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div className="mt-6 flex justify-end gap-4">
+        <div className="h-10 w-24 rounded bg-gray-300" />
+        <div className="h-10 w-32 rounded bg-gray-300" />
       </div>
     </div>
   );
