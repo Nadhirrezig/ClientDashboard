@@ -1,5 +1,4 @@
 'use client';
-
 import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
 import {
   CheckIcon,
@@ -19,7 +18,6 @@ export default function EditInvoiceForm({
   customers: CustomerField[];
 }) {
   const customer = customers.find((c) => c.id === invoice.customer_id);
-
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
