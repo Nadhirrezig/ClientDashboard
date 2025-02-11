@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 ## finalization
 This project is all set to production <br>
 Im happy to share it with You <br>
-## To connect:
+## To login:
 Email:rzignadhir@gmail.com <br>
 password:123456
 
